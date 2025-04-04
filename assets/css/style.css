@@ -1,0 +1,19 @@
+.container-header {
+    width: 100vw;
+
+    background-color: #0F0F0F;
+
+    display: flex;
+    flex-direction: row;
+}
+
+header .teste {
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+}
+
+header .menu-lateral {
+    width: 40px;
+    margin: 40px;
+}
