@@ -1,19 +1,60 @@
+body {
+    background-color: #F0F0F0;
+}
+
 .container-header {
-    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-    background-color: #0F0F0F;
+    padding: 20px;
 
+    background-color: #FFF;
+}
+
+header .menu-lateral {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.menu-lateral button {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+
+    border: none;
+}
+
+.menu-lateral canvas {
+    width: 30px;
+    height: 5px;
+    margin: 2px;
+
+    background-color: #0f0f0f;
+    border-radius: 10px;
+}
+
+.menu-lateral nav {
+    display: none;
+}
+
+.menu-lateral a {
+    margin: 0px 0px -3px 10px;
+}
+
+.container-header form {
     display: flex;
     flex-direction: row;
 }
 
-header .teste {
-    width: 10px;
-    height: 10px;
-    background-color: aqua;
+.container-header form > input{
+    width: 30em;
+    padding: 5px;
 }
 
-header .menu-lateral {
-    width: 40px;
-    margin: 40px;
+.container-header form > button img{
+    width: 17px;
 }
