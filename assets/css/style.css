@@ -9,6 +9,10 @@ body {
     background-color: #F0F0F0;
 }
 
+/*******************
+HEADER
+********************/
+
 .container-header {
     display: flex;
     flex-direction: row;
@@ -105,6 +109,10 @@ margin-right: 20px;
     border-radius: 50px;
 }
 
+/*******************
+MAIN
+********************/
+
 #container {
     display: flex;
     flex-direction: row;
@@ -112,16 +120,14 @@ margin-right: 20px;
     margin: 3em;
 }
 
-#container .video {
-    border: solid red 1px;
+.video > iframe {
+    width: 70vw;
+    height: 70vh;
+
+    border-radius: 15px;
 }
 
-#container .video > iframe {
-    width: 65vw;
-    height: 65vh;
-}
-
-#container .about h1{
+.about h1{
     font-size: 22px;
 }
 
@@ -131,12 +137,45 @@ margin-right: 20px;
 }
 
 .about-video > img {
-    margin: 0 10px 0 0 ;
+    margin: 0 70px 0 0 ;
 }
 
 .about-video .inscreva-se {
     background-color: red;
     color: white;
-    padding: 7px;
-    margin: 0 10px 0 0;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.about-video button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-right: 30px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.about-video button img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.description {
+    width: 60em;
+}
+
+.description p{
+    font-weight: lighter;
+    font-size: large;
+}
+
+.list-videos {
+    margin-left: 30px;
+}
+
+.list-videos img {
+    margin-bottom: 10px;
 }
