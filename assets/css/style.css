@@ -1,5 +1,6 @@
 body {
     background-color: #F0F0F0;
+    font-family: 'Roboto';
 }
 
 .container-header {
@@ -53,8 +54,57 @@ header .menu-lateral {
 .container-header form > input{
     width: 30em;
     padding: 5px;
+    border-radius: 3px;
 }
 
 .container-header form > button img{
     width: 17px;
+    
+    border-radius: 3px;
+}
+
+.header-left img {
+    width: 30px;
+    margin: 0 3px;
+}
+
+.header-left a > img{
+    height: 30px;
+    border-radius: 50px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+
+    margin: 3em;
+}
+
+#container .video {
+    border: solid red 1px;
+}
+
+#container .video > iframe {
+    width: 65vw;
+    height: 65vh;
+}
+
+#container .about h1{
+    font-size: 22px;
+}
+
+.about-video {
+    display: flex;
+    align-items: center;
+}
+
+.about-video > img {
+    margin: 0 10px 0 0 ;
+}
+
+.about-video .inscreva-se {
+    background-color: red;
+    color: white;
+    padding: 7px;
+    margin: 0 10px 0 0;
 }
