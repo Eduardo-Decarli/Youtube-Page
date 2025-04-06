@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
 body {
     background-color: #F0F0F0;
-    font-family: 'Roboto';
 }
 
 .container-header {
@@ -26,6 +32,7 @@ header .menu-lateral {
     flex-direction: column;
     background-color: transparent;
 
+    cursor: pointer;
     border: none;
 }
 
@@ -39,7 +46,30 @@ header .menu-lateral {
 }
 
 .menu-lateral nav {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 72px;
+    height: 100%;
+}
+
+#lateral-list {
     display: none;
+}
+
+.links li {
+    padding: 25px;
+    border-bottom: solid 1px black;
+}
+
+.links a {
+margin-right: 20px;
+
+    font-size: 40;
+    font-weight: 50;
+    text-decoration: none;
+    color:  black;
+    
 }
 
 .menu-lateral a {
@@ -54,18 +84,20 @@ header .menu-lateral {
 .container-header form > input{
     width: 30em;
     padding: 5px;
-    border-radius: 3px;
+    border-right: none;
+}
+
+.container-header form > button{
+    cursor: pointer;
 }
 
 .container-header form > button img{
     width: 17px;
-    
-    border-radius: 3px;
 }
 
 .header-left img {
     width: 30px;
-    margin: 0 3px;
+    margin: 0 0.6em;
 }
 
 .header-left a > img{

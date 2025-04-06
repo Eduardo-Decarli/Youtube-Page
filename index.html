@@ -13,16 +13,22 @@
     <header>
         <div class="container-header">
             <div class="menu-lateral">
-                <button>
+                <button onclick="trocarDisplay()">
                     <canvas></canvas>
                     <canvas></canvas>
                     <canvas></canvas>
                 </button>
-                <nav class="lateral-list">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                <nav id="lateral-list">
+                    <ul class="links">
+                        <li><a href="">Início</a></li>
+                        <li><a href="">Shorts</a></li>
+                        <li><a href="">Inscrições</a></li>
+                        <li><a href="">Histórico</a></li>
+                        <li><a href="">Playlists</a></li>
+                        <li><a href="">Seus Videos</a></li>
+                        <li><a href="">Seus Cursos</a></li>
+                        <li><a href="">Assistir mais tarde</a></li>
+                        <li><a href="">Vídeos com "Gostei"</a></li>
                     </ul>
                 </nav>
                 <a class="teste" href="https://www.youtube.com/">
@@ -78,5 +84,17 @@
         </section>
     </main>
 </body>
+
+<script>
+    function trocarDisplay() {
+        const nav = document.getElementById("lateral-list");
+
+        if(nav.style.display === "none" || nav.style.display === "") {
+            nav.style.display = "block";
+        }else {
+            nav.style.display = "none";
+        }
+    }
+</script>
 
 </html>
