@@ -19,7 +19,7 @@ HEADER
     justify-content: space-between;
     align-items: center;
 
-    padding: 20px;
+    padding: 2.3vh;
 
     background-color: #FFF;
 }
@@ -53,8 +53,7 @@ header .menu-lateral {
     background-color: white;
     position: absolute;
     left: 0;
-    top: 72px;
-    height: 100%;
+    top: 9vh;
 }
 
 #lateral-list {
@@ -67,13 +66,12 @@ header .menu-lateral {
 }
 
 .links a {
-margin-right: 20px;
+    margin-right: 20px;
 
     font-size: 40;
     font-weight: 50;
     text-decoration: none;
     color:  black;
-    
 }
 
 .menu-lateral a {
@@ -86,7 +84,7 @@ margin-right: 20px;
 }
 
 .container-header form[method="get"] > input{
-    width: 30em;
+    width: 35vw;
     padding: 5px;
     border-right: none;
 }
