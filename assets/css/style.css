@@ -120,19 +120,24 @@ MAIN
 #container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     margin: 3em;
 }
 
+.video {
+    width: 60vw;
+}
+
 .video > iframe {
-    width: 70vw;
-    height: 70vh;
+    width: 60vw;
+    height: 60vh;
 
     border-radius: 15px;
 }
 
 .about h1{
-    font-size: 22px;
+    font-size: 21px;
 }
 
 .about-video {
@@ -155,6 +160,7 @@ MAIN
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
 
     margin-right: 30px;
     font-size: 15px;
@@ -165,10 +171,6 @@ MAIN
 .about-video button img {
     width: 20px;
     margin-right: 5px;
-}
-
-.description {
-    width: 60em;
 }
 
 .description p{
@@ -190,7 +192,4 @@ MAIN
 
     grid-template-columns: auto auto auto auto;
     padding: 50px;
-}
-
-.grid-container img {
 }
