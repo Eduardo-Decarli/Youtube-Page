@@ -20,18 +20,21 @@
                 </button>
                 <nav id="lateral-list">
                     <ul class="links">
-                        <li><a href="">Início</a></li>
-                        <li><a href="">Shorts</a></li>
-                        <li><a href="">Inscrições</a></li>
-                        <li><a href="">Histórico</a></li>
-                        <li><a href="">Playlists</a></li>
-                        <li><a href="">Seus Videos</a></li>
-                        <li><a href="">Seus Cursos</a></li>
-                        <li><a href="">Assistir mais tarde</a></li>
-                        <li><a href="">Vídeos com "Gostei"</a></li>
+                        <ul class="links">
+                            <li><a href=""><img src="assets/images/links nav/home.svg" alt="">Início</a></li>
+                            <li><a href=""><img src="assets/images/links nav/compass.svg" alt="">Explorar</a></li>
+                            <li><a href=""><img src="assets/images/links nav/youtube.svg" alt="">Inscrições</a></li>
+                            <li><a href=""><img src="assets/images/links nav/disc.svg" alt="">Youtube Music</a></li>
+                            <li><a href=""><img src="assets/images/links nav/thumbs-up.svg" alt="">Vídeos que gostei</a></li>
+                            <li><a href=""><img src="assets/images/links nav/clock.svg" alt="">Assistir mais tarde</a></li>
+                            <li><a href=""><img src="assets/images/links nav/download.svg" alt="">Downloads</a></li>
+                            <li><a href=""><img src="assets/images/links nav/film.svg" alt="">Filmes</a></li>
+                            <li><a href=""><img src="assets/images/links nav/book.svg" alt="">Aprender</a></li>
+                            <li><a href=""><img src="assets/images/links nav/award.svg" alt="">Esportes</a></li>
+                        </ul>
                     </ul>
                 </nav>
-                <a class="teste" href="https://www.youtube.com/">
+                <a href="menu.html">
                     <img src="assets/images/youtube-logo.svg" alt="Logo do Youtube">
                 </a>
             </div>
@@ -52,7 +55,10 @@
 
     <main id="container">
         <section class="video">
-            <iframe src="https://www.youtube.com/embed/9Z8-bA1ro48?si=g-dspeIYFh_wFjlv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/9Z8-bA1ro48?si=g-dspeIYFh_wFjlv" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="about">
                 <h1>Semana Front-end | Dia 01: Contruindo uma Leading Page no Mundo Invertido com HTML e CSS</h1>
                 <div class="about-video">
@@ -64,7 +70,8 @@
                     <button><img src="assets/images/download.svg" alt="">Download</button>
                 </div>
                 <div class="description">
-                    <h3><span style="margin-right: 20px;">28.418 visualizações</span> Transmitindo ao vivo em 23 ago. de 2022</h3>
+                    <h3><span style="margin-right: 20px;">28.418 visualizações</span> Transmitindo ao vivo em 23 ago. de
+                        2022</h3>
                     <p>Inicie uma aventura no mundo do front-end com HTML e CSS. Para isso, criaremos uma laiding page
                         com a temáticada série Stranger Things, a qual contará com a implementação de um theme switcher
                         (light e dark) para explorarmos.</p>
@@ -106,16 +113,6 @@
     </main>
 </body>
 
-<script>
-    function trocarDisplay() {
-        const nav = document.getElementById("lateral-list");
-
-        if(nav.style.display === "none" || nav.style.display === "") {
-            nav.style.display = "block";
-        }else {
-            nav.style.display = "none";
-        }
-    }
-</script>
+<script src="assets/js/content.js"></script>
 
 </html>

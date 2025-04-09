@@ -32,7 +32,7 @@ header .menu-lateral {
 }
 
 .menu-lateral button[onclick="trocarDisplay()"] {
-    display: flex;
+    display: flex; 
     flex-direction: column;
     background-color: transparent;
 
@@ -66,12 +66,18 @@ header .menu-lateral {
 }
 
 .links a {
+    display: flex;
+    align-items: center;
     margin-right: 20px;
 
     font-size: 40;
     font-weight: 50;
     text-decoration: none;
-    color:  black;
+    color: black;
+}
+
+.links a > img {
+    margin-right: 10px;
 }
 
 .menu-lateral a {
@@ -177,4 +183,14 @@ MAIN
 .list-videos img {
     margin-bottom: 10px;
     cursor: pointer;
+}
+
+.grid-container {
+    display: grid;
+
+    grid-template-columns: auto auto auto auto;
+    padding: 50px;
+}
+
+.grid-container img {
 }
