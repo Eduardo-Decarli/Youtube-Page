@@ -162,6 +162,7 @@ MAIN
     align-items: center;
     flex-wrap: wrap;
 
+    flex-shrink: 2;
     margin-right: 30px;
     font-size: 15px;
     border: none;
@@ -187,9 +188,17 @@ MAIN
     cursor: pointer;
 }
 
+/*****************************
+Menu main
+******************************/
+
 .grid-container {
     display: grid;
 
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
     padding: 50px;
+    gap: 20px;
+
+    justify-content: center;
+    align-content: start;
 }
